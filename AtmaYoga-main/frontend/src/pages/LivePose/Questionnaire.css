@@ -1,0 +1,128 @@
+/* src/pages/LivePose/Questionnaire.css */
+
+.questionnaire-wrapper {
+  max-width: 900px;
+  margin: 100px auto 60px;
+  padding: 0 20px 40px;
+}
+
+.questionnaire-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.questionnaire-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.questionnaire-form {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+  padding: 30px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.question-card {
+  border-radius: 14px;
+  padding: 16px 18px;
+  background: #faf7ff;
+  border: 1px solid rgba(126, 87, 194, 0.12);
+}
+
+.question-card label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.question-card select,
+.question-card textarea,
+.question-card input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.question-card select:focus,
+.question-card textarea:focus,
+.question-card input[type="text"]:focus {
+  border-color: #7e57c2;
+  box-shadow: 0 0 0 2px rgba(126, 87, 194, 0.15);
+}
+
+.question-card textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.checkbox-label input {
+  accent-color: #7e57c2;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #7e57c2, #b388ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-end;
+  box-shadow: 0 10px 24px rgba(126, 87, 194, 0.35);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(126, 87, 194, 0.4);
+}
+
+@media (max-width: 768px) {
+  .questionnaire-wrapper {
+    margin-top: 80px;
+  }
+
+  .questionnaire-form {
+    padding: 20px 18px;
+  }
+
+  .question-card {
+    padding: 14px 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+  }
+}
